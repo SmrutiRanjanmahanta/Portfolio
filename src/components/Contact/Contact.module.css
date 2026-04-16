@@ -148,6 +148,15 @@
   text-align: center;
 }
 
+.errorMsg {
+  color: var(--danger, #e74c3c);
+  font-size: 14px;
+  margin-top: 4px;
+  display: block;
+  text-align: left;
+  padding-left: 2px;
+}
+
 .footerBottom {
   margin-top: 80px;
   padding-top: 30px;
