@@ -1,0 +1,20 @@
+[
+  {
+    "degree": "B.Tech in CSE (AI)",
+    "school": "GIFT Autonomous",
+    "duration": "2023 - 2027",
+    "score": "CGPA: 8.57"
+  },
+  {
+    "degree": "Intermediate (CHSE)",
+    "school": "Hi- Tech Higher Secondary School",
+    "duration": "2019 - 2021",
+    "score": "70%"
+  },
+  {
+    "degree": "Matriculation (BSE)",
+    "school": "Baneswar High School",
+    "duration": "2018 - 2019",
+    "score": "72%"
+  }
+]

@@ -1,0 +1,107 @@
+@import "../../vars.css";
+
+.toggle {
+  position: relative;
+  width: 56px;
+  height: 30px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+.glow {
+  position: absolute;
+  inset: -8px;
+  border-radius: 999px;
+  background: radial-gradient(
+    circle at 50% 50%,
+    var(--toggle-glow) 0%,
+    transparent 72%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.track {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--toggle-track-bg);
+  box-shadow:
+    inset 0 2px 5px rgba(0, 0, 0, 0.14),
+    0 2px 12px var(--toggle-glow);
+  overflow: hidden;
+  z-index: 1;
+  transition: box-shadow 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.toggle:hover .track {
+  box-shadow:
+    inset 0 2px 5px rgba(0, 0, 0, 0.12),
+    0 4px 20px var(--toggle-glow-strong);
+}
+
+.icons {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 9px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.iconWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sun {
+  color: #f59e0b;
+  filter: drop-shadow(0 0 4px rgba(245, 158, 11, 0.45));
+}
+
+.moon {
+  color: #a5b4fc;
+  filter: drop-shadow(0 0 4px rgba(165, 180, 252, 0.4));
+}
+
+.thumb {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--toggle-thumb-bg);
+  box-shadow:
+    0 3px 10px rgba(0, 0, 0, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.75);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.sheen {
+  position: absolute;
+  top: 7px;
+  left: 12%;
+  width: 38%;
+  height: 42%;
+  border-radius: 50%;
+  background: linear-gradient(
+    130deg,
+    rgba(255, 255, 255, 0.55) 0%,
+    transparent 58%
+  );
+  pointer-events: none;
+  opacity: 0.4;
+  mix-blend-mode: soft-light;
+  z-index: 4;
+}

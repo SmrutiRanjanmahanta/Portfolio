@@ -1,30 +1,74 @@
 [
   {
-    "title": "HTML",
-    "imageSrc": "skills/html.png"
+    "title": "Java",
+    "imageSrc": "skills/java.png",
+    "rating": 5,
+    "category": "Programming"
+  },
+  {
+    "title": "Python",
+    "imageSrc": "skills/python.jpg",
+    "rating": 4,
+    "category": "Programming"
+  },
+  {
+    "title": "React JS",
+    "imageSrc": "skills/react.png",
+    "category": "Frontend"
+  },
+  {
+    "title": "Html",
+    "imageSrc": "skills/html.png",
+    "category": "Frontend"
   },
   {
     "title": "CSS",
-    "imageSrc": "skills/css.png"
+    "imageSrc": "skills/css.png",
+    "category": "Frontend"
   },
   {
-    "title": "React",
-    "imageSrc": "skills/react.png"
+    "title": "Spring Boot",
+    "imageSrc": "skills/springboot.png",
+    "category": "Backend"
   },
   {
-    "title": "Node",
-    "imageSrc": "skills/node.png"
+    "title": "Flask",
+    "imageSrc": "skills/flask.png",
+    "category": "Backend"
   },
   {
-    "title": "GraphQL",
-    "imageSrc": "skills/graphql.png"
+    "title": "MySQL",
+    "imageSrc": "skills/Mysql.png",
+    "category": "Databases"
   },
   {
     "title": "MongoDB",
-    "imageSrc": "skills/mongodb.png"
+    "imageSrc": "skills/mongodb.png",
+    "category": "Databases"
   },
   {
-    "title": "Figma",
-    "imageSrc": "skills/figma.png"
+    "title": "Machine Learning",
+    "imageSrc": "skills/ml.jpg",
+    "category": "AI/ML"
+  },
+  {
+    "title": "Git",
+    "imageSrc": "skills/Git.png",
+    "category": "Tools"
+  },
+  {
+    "title": "Spring_AI",
+    "imageSrc": "skills/springai.jpg",
+    "category": "AI/ML"
+  },
+  {
+    "title": "AWS",
+    "imageSrc": "skills/Aws.png",
+    "category": "Tools"
+  },
+  {
+    "title": "Docker",
+    "imageSrc": "skills/Docker.png",
+    "category": "Tools"
   }
 ]

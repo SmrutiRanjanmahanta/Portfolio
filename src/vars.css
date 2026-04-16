@@ -1,11 +1,125 @@
 :root {
-  /* Colours */
-  --color-text: #fff;
-  --color-primary: #576cbc;
-  --color-secondary: #19376d;
-  --color-dark: #0b2447;
-  --color-bg: #04152d;
+  /* Colors */
+  --bg-primary: #020617;
+  --bg-secondary: #0f172a;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-tertiary: #64748b;
+  --accent-primary: #7c3aed;
+  --accent-secondary: #38bdf8;
+  --accent-gradient: linear-gradient(135deg, #7c3aed 0%, #38bdf8 100%);
+  --accent-warm: #fbbf24;
 
-  /* Fonts */
-  --font-roboto: "Roboto";
+  /* UI Elements */
+  --glass-bg: rgba(15, 23, 42, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --card-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+  /* Theme toggle */
+  --toggle-track-bg: linear-gradient(90deg, #1e293b 0%, #312e81 100%);
+  --toggle-thumb-bg: linear-gradient(145deg, #f8fafc 0%, #cbd5e1 100%);
+  --toggle-glow: rgba(124, 58, 237, 0.28);
+  --toggle-glow-strong: rgba(124, 58, 237, 0.42);
+
+  /* Layout helpers */
+  --navbar-scrolled-bg: rgba(2, 6, 23, 0.8);
+  --surface-hover: rgba(255, 255, 255, 0.05);
+  --input-bg: rgba(255, 255, 255, 0.03);
+  --input-border: rgba(255, 255, 255, 0.1);
+  --input-text: #f8fafc;
+  --btn-on-gradient-text: #ffffff;
+  --btn-disabled-bg: #1e293b;
+  --footer-note: #475569;
+  --success: #10b981;
+
+  --loader-bg: radial-gradient(
+    circle at center,
+    #1e293b 0%,
+    #0f172a 55%,
+    #020617 100%
+  );
+  --loader-ring-dim: rgba(255, 255, 255, 0.18);
+
+  --hero-float-bg: rgba(15, 23, 42, 0.6);
+  --hero-float-border: rgba(255, 255, 255, 0.1);
+  --hero-float-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  --hero-orb: rgba(25, 55, 109, 0.7);
+  --cta-hover-bg: rgba(124, 58, 237, 0.1);
+  --cta-hover-shadow: 0 5px 15px rgba(124, 58, 237, 0.35);
+  --cta-hover-shadow-strong: 0 5px 15px rgba(124, 58, 237, 0.45);
+
+  --project-overlay: rgba(15, 23, 42, 0.9);
+  --project-tag-bg: rgba(124, 58, 237, 0.1);
+  --project-tag-border: rgba(124, 58, 237, 0.2);
+
+  --github-card-bg: #0d1117;
+  --github-border: #30363d;
+  --github-border-hover: #8b949e;
+  --github-header: #58a6ff;
+  --github-muted: #8b949e;
+
+  color-scheme: dark;
+}
+
+[data-theme="light"] {
+  --bg-primary: #f1f5f9;
+  --bg-secondary: #ffffff;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-tertiary: #64748b;
+  --accent-primary: #6d28d9;
+  --accent-secondary: #0369a1;
+  --accent-gradient: linear-gradient(135deg, #6d28d9 0%, #0ea5e9 100%);
+  --accent-warm: #d97706;
+
+  --glass-bg: rgba(255, 255, 255, 0.88);
+  --glass-border: rgba(15, 23, 42, 0.08);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.07);
+  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08);
+  --card-shadow: 0 12px 40px rgba(15, 23, 42, 0.09);
+
+  --toggle-track-bg: linear-gradient(90deg, #e0e7ff 0%, #bae6fd 100%);
+  --toggle-thumb-bg: linear-gradient(145deg, #ffffff 0%, #e2e8f0 100%);
+  --toggle-glow: rgba(14, 165, 233, 0.22);
+  --toggle-glow-strong: rgba(14, 165, 233, 0.34);
+
+  --navbar-scrolled-bg: rgba(255, 255, 255, 0.86);
+  --surface-hover: rgba(15, 23, 42, 0.06);
+  --input-bg: rgba(241, 245, 249, 0.95);
+  --input-border: rgba(15, 23, 42, 0.12);
+  --input-text: #0f172a;
+  --btn-on-gradient-text: #ffffff;
+  --btn-disabled-bg: #cbd5e1;
+  --footer-note: #64748b;
+
+  --loader-bg: radial-gradient(
+    circle at 28% 18%,
+    #e0e7ff 0%,
+    #f8fafc 42%,
+    #e2e8f0 100%
+  );
+  --loader-ring-dim: rgba(15, 23, 42, 0.14);
+
+  --hero-float-bg: rgba(255, 255, 255, 0.82);
+  --hero-float-border: rgba(15, 23, 42, 0.1);
+  --hero-float-shadow: 0 12px 40px rgba(15, 23, 42, 0.12);
+  --hero-orb: rgba(99, 102, 241, 0.22);
+  --cta-hover-bg: rgba(109, 40, 217, 0.09);
+  --cta-hover-shadow: 0 8px 24px rgba(109, 40, 217, 0.22);
+  --cta-hover-shadow-strong: 0 8px 26px rgba(109, 40, 217, 0.28);
+
+  --project-overlay: rgba(255, 255, 255, 0.92);
+  --project-tag-bg: rgba(109, 40, 217, 0.08);
+  --project-tag-border: rgba(109, 40, 217, 0.22);
+
+  --github-card-bg: #f6f8fa;
+  --github-border: #d0d7de;
+  --github-border-hover: #8c959f;
+  --github-header: #0969da;
+  --github-muted: #57606a;
+
+  color-scheme: light;
 }

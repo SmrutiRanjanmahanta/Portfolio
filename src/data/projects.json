@@ -1,26 +1,41 @@
 [
   {
-    "title": "Project A",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "title": "Email Spam Detection System",
+    "imageSrc": "projects/emailspam.jpg",
+    "description": "Machine learning-based web application that classifies emails as spam or not using NLP techniques.",
+    "skills": ["Python", "Flask", "Scikit-learn"],
+    "demo": "https://github.com/SmrutiRanjanmahanta",
+    "source": "https://github.com/SmrutiRanjanmahanta/Email_spam_detector.git",
+    "highlights": [
+      "Real-time spam classification",
+      "Text preprocessing pipeline",
+      "Naive Bayes model implementation"
+    ]
   },
   {
-    "title": "Project B",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "title": "Job Portal Application",
+    "imageSrc": "projects/JobApp.png",
+    "description": "Full-stack platform connecting recruiters and job seekers with role-based dashboards.",
+    "skills": ["Spring Boot", "React", "MySQL"],
+   
+    "source": "https://github.com/SmrutiRanjanmahanta/job-matcher-pro.git",
+    "highlights": [
+      "Authentication system",
+      "Recruiter & applicant dashboards",
+      "REST API integration"
+    ]
   },
   {
-    "title": "Project C",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "title": "Student Management System",
+    "imageSrc": "projects/sm.jpg",
+    "description": "Web-based CRUD application to manage student records efficiently.",
+    "skills": ["Spring Boot", "React", "MySQL"],
+    
+    "source": "https://github.com/SmrutiRanjanmahanta/Student_Management.git",
+    "highlights": [
+      "Full CRUD operations",
+      "Structured database design",
+      "Responsive UI"
+    ]
   }
 ]

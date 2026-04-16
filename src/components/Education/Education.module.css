@@ -1,0 +1,135 @@
+.container {
+  padding: 80px 10%;
+  background-color: transparent;
+}
+
+.title {
+  color: var(--text-primary);
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.timelineLine {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--accent-gradient);
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.timelineItem {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Even/Odd logic for Timeline */
+.timelineItem:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.timelineDot {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  background: var(--accent-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: 0 0 15px var(--accent-primary);
+}
+
+.timelineContent {
+  width: 42%;
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+}
+
+.duration {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent-secondary);
+  margin-bottom: 10px;
+  display: block;
+}
+
+.degree {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.school {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-bottom: 15px;
+}
+
+.scoreBadge {
+  display: inline-block;
+  padding: 6px 14px;
+  background: rgba(56, 189, 248, 0.1);
+  color: var(--accent-secondary);
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .timelineLine {
+    left: 30px;
+  }
+
+  .timelineItem {
+    justify-content: flex-start;
+    padding-left: 70px;
+  }
+
+  .timelineItem:nth-child(even) {
+    flex-direction: row;
+  }
+
+  .timelineDot {
+    left: 30px;
+  }
+
+  .timelineContent {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 60px 5%;
+  }
+}

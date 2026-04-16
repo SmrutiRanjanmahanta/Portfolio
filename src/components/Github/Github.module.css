@@ -1,0 +1,149 @@
+.container {
+  padding: 80px 10%;
+  background-color: transparent;
+}
+
+.title {
+  color: var(--text-primary);
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.statsContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.statCard {
+  background: var(--bg-secondary);
+  border: 1px solid var(--glass-border);
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: var(--shadow-md);
+}
+
+.statInfo a {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent-secondary);
+  display: block;
+  margin-bottom: 5px;
+}
+
+.statInfo p {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.miniStat {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.miniStat span {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.repoGrid {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.repoCard {
+  background: var(--github-card-bg);
+  border: 1px solid var(--github-border);
+  border-radius: 8px;
+  padding: 16px;
+  transition: 0.3s;
+}
+
+.repoCard:hover {
+  border-color: var(--github-border-hover);
+  transform: translateX(10px);
+}
+
+.repoHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--github-header);
+  font-weight: 600;
+  font-family: monospace;
+  margin-bottom: 12px;
+}
+
+.repoBody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.langInfo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--github-muted);
+  font-size: 12px;
+}
+
+.langDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.repoAction {
+  color: var(--github-muted);
+}
+
+@media screen and (max-width: 900px) {
+  .content {
+    flex-direction: column;
+  }
+  
+  .statsContainer, .repoGrid {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 60px 5%;
+  }
+  
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+}
