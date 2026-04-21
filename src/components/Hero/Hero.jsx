@@ -33,7 +33,7 @@ export const Hero = () => {
           💡 “Building scalable web applications and intelligent systems that solve real-world problems.”
         </p>
         <div className={styles.ctaGroup}>
-          <a href="/cv.pdf" className={styles.downloadBtn} download>
+          <a href="https://drive.google.com/file/d/1LrECfeiL5FAiRVYp0XDItSZ64Ty3PTsz/view?usp=sharing" className={styles.downloadBtn} download>
             <Download size={20} /> Download CV
           </a>
           <a href="#contact" className={styles.contactBtn}>
